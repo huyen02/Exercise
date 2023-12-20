@@ -1,0 +1,12 @@
+File .gitignore
+- Là 1 file đặc biệt trong repostory, nó loại bỏ các file không muốn commit
+- Nó giúp: 
++ Ngăn chặn việc theo dõi các tập tin khôg cần thiết, loại bỏ file được tạo ra tỏng quá trình phát triển
++ Bảo mật thông tin nhạy cảm như: mật khẩu, các thông tin riêng tư
++ Tăng cường cộng tác làm việc trên kho lưu trữ không gặp xung đột do các tập tin không liên quan sinh ra
+- Thường được sử dụng trong teamwork để duy trì 1 kho lưu trữ sạch
+- Sử dụng .gitignore để ignore accs file không quan trọng trong project, những file hay được sinh ra như: file Object, file log khi chạy build...
+Các loại .gitignore:
+- ignore 1 file: file_name.extention
+- ignore 1 loại file: *.log
+- ignore 1 folder: folderName/...
