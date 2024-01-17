@@ -1,0 +1,29 @@
+Những project nào sẽ phù hợp với Waterfall ?
+- Dự án có yêu cầu cố định ngay từ đầu: được xác định rõ ràng ngay lúc đầu và không có thay đổi trong lúc phát triển
+- Dự án có quy trình khép kín: các giai đoạn hoàn thành 1 cách độc lập, không phụ thuộc vào giai đoạn tiếp theo
+- Dự án có yêu cầu ít biến động: không có thay đổi dự kiến đến từ khách hàng
+- Dự án có yêu cầu pháp lý: tuân thủ theo các tiêu chuẩn hoặc quy định
+Tại sao cần xác định project domain?
+- Nó giúp hiểu rõ yêu cầu về lĩnh vực của dự án 
+- Phân tích yêu cầu và tạo ra một bản thiết kế chính xác cho dự án
+- Giúp tối ưu hóa quy trình phát triển
+- Giúp dễ dàng trong việc tương tác với khách hàng hoặc người sử dụng sản phẩm
+Project về phát triển ứng dụng ví điện tử trên mạng blockchain:
+1. Requirement:
+- Xác định mục tiêu chính của ví điện tử: gửi và nhận thanh toán, quản lí tài khoản, tích hợp tiền và token
+- Thu thập yêu cầu người dùng để hiểu rõ tính năng họ mong muốn
+2. Design: 
+- Lựa chọn nền tảng mạng Blockchain: Ethereum, Bitcoin...
+- Thiết kế cấu trúc dữ liệu cho ví điẹn tử, cách lưu trữ thông tin người dùng, giao dịch
+3. Development: 
+- Code smart contract về chức năng giao dịch và quản lý tài khoản
+- Code phần mềm backend và Frontend : cho phép người dùng thực hiện giao dịch và quản lý tài khoản
+4. Software testing: 
+- Kiểm tra sự nhất quán của dữ liệu và giao dịch trên Blockchain
+- Kiểm tra bảo mật của ứng dụng ví điện tử
+5. Deploy:
+- Triển khai hệ thống ví điện tử trên mạng Blockchain đã chọn
+- Tích hợp thêm các ứng dụng vào nền tảng nếu muốn
+6. Maintainance:
+- Hỗ trợ kỹ thuật cho người dùng
+- Cập nhật hoặc sửa lỗi các tính năng hay lỗi phát sinh
