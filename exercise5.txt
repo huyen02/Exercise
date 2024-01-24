@@ -1,0 +1,126 @@
+Software development lifecycle:
+Giai đoạn: 
+1. Requirement
+Người tham gia: 
+- Stakeholder(Người quan tâm đến giá trị ra ngoài của sản phẩm): customer,...
+- Business analysis: Phân tích nghiệp vụ (BA) viết doc cho dự án
+- Project manager: Người nhìn bao quát dự án, check các yêu cầu thực hiện đến đâu,...
+- Technical Team: dev, Architect,...
+- Quality assurance(QA): Test hệ thống dựa trên requirement
+- Designers(UI/UX)
+Output: Requirement documentation(cần thiết nhất) 
+2. Analysis
+- BA
+- PM
+- System analysis/ Architects: lường trước accs công nghệ sử dụng: Design patterns, db gì?ngôn ngữ gì? Framework gì? Microservices hay không? eav hay cổ điển
+- QA, dev
+Các biểu đồ(ngôn ngữ UML:OOP): Use case, class, sequence, activity,...
+3. Design
+- UI/UX designer: Thiết kế giao diện hệ thống
+- SA: Thiết kế kiến trúc hệ thống structure, tech stack, data flow, database design...: tương tác với hệ thống khác như thế nào.
+- High level design
+- PM
+- Developer: Frontend -> source code
+- Engineer: Backend -> source code
+- Devlops
+- FE: dùng analysis, design UI/UX
+- BE: dùng analysis, system design
+4. Implementation
+- FE: code giao diện, code ghép api
+- BE: code api, java, ...
+- AI: code thuâtj toán AI, tích hợp vào function
+- Smartcontract: solidity, C++,...
+- Devlops: cài đặt vào quy trình CI/CD, cài đặt môi trường.
+5. Testing
+- QA, Tester: kiểm tra các tính năng đã được code, có lỗi hay không?, Có đáp ứng requirement không?
+Output: file excel kết quả từng case
+6. Hand over
+- Stakeholder
+- Training staff
+- PM
+- QA: lượt test cuối cùng trước khi bàn giao
+Output: doc specialist: hướng dẫn người dùng tài liệu hệ thống
+7. Maintenance: Nhiều người join
+- Requirement -> analysis -> design -> implementation -> testing -> hand over
+6.1. Publish
+6.2. Measure
+6.3. Learn
+Outsourcing: Người có tài sản nhưng không phải người làm
+Production: Có tài sản và tự làm
+Waterfall: là mô hình sớm nhất
+1. Why? 
+- Yêu cầu được xác định rõ ràng
+- Môi trường phát triển ổn định
+- Dễ hiểu và dễ triển khai
+- Dễ theo dõi tiến độ hoàn thành 1 cách tuần tự
+- Có tài liệu thiết kế sớm
+2. What?
+- Requirement: Làm rõ yêu cầu cần làm: Yêu cầu chức năng và phi chức năng
+- Design: + Tài liệu phân tích thiết kế:
++ biểu đồ UML: use case, class, data flow
++ giao diện người dùng figma
+BE nên đọc giao diện để làm gì? -> Thiết kế request respone api tốt hơn.
+Input design là output requirement
+- Development: Viết các dòng code
++ Code Frontend
++ Code Backend: api, job, ...
++ Thuật toán(nếu có): AI,
++ Model view controller
+Input development là output design
+- Sofware testing(chạy lên alpha, beta): Thường hay phát hiện lỗi muộn ở đây
++ Unitest: kiểm thử đơn vị, đơn vị tính bằng hàm
++ Integration test(test tích hợp)
++ System test: test lại xem chạy ok không
++ Acceptance test: Test lần cuối trứóc khi deploy
+- Deploy: Bàn giao: chạy lên server production, hệ thống truy cập qua internet
+- Maintenance: 
++ Sửa lỗi phát sinh khi deploy hệ thống người dùng phát ra
++ Xuất hiện trong thời gian ngắn sau khi deploy sản phẩm
+3. How?
+Thực hiện từng giai đoạn, hết giai đoạn này mới được sang giai đoạn khác, input của giai đoạn này là output của giai đoạn trước
+4. Ưu điểm
+- Dễ hiểu, dễ quản lí
+- Phân chia rõ ràng các giao diện
+- Kiểm soát thay đổi
+5. Nhược điểm
+- Phát hiện lỗi muộn
+- Khó khăn trong ước lượng thời gian và chi phí
+- Không linh hoạt
+- Lỗi hồi quy: ví dụ nếu sai từ bước 4 thì phải quay lại bước 1.
+Những project nào sẽ phù hợp với Waterfall ?
+- Dự án có yêu cầu cố định ngay từ đầu: được xác định rõ ràng ngay lúc đầu và không có thay đổi trong lúc phát triển
+- Dự án có quy trình khép kín: các giai đoạn hoàn thành 1 cách độc lập, không phụ thuộc vào giai đoạn tiếp theo
+- Dự án có yêu cầu ít biến động: không có thay đổi dự kiến đến từ khách hàng
+- Dự án có yêu cầu pháp lý: tuân thủ theo các tiêu chuẩn hoặc quy định
+Tại sao cần xác định project domain?
+- Nó giúp hiểu rõ yêu cầu về lĩnh vực của dự án 
+- Phân tích yêu cầu và tạo ra một bản thiết kế chính xác cho dự án
+- Giúp tối ưu hóa quy trình phát triển
+- Giúp dễ dàng trong việc tương tác với khách hàng hoặc người sử dụng sản phẩm
+Agile
+- Triết lý: Nhanh chóng thích ứng với sự thay đổi <sinh ra để giải quyết vấn đề của waterfall>
+- 4 tuyên ngôn: 
++ Cá nhân và sự tương tác > quy trình công cụ
++ Phần mềm chạy tốt > tài liệu đầy đủ
++ Cộng tác với khách hàng > đàm phán hợp đồng (khách hàng đóng vai trò là thành viên trong team)
++ Phản hồi với sự thay đổi > Bám vào kế hoạch
+- 12 nguyên tắc:
++ Ưu tiên cao nhất thỏa mãn khách hàng là thông qua việc phân phối sớm và liên tục
++ Chào đón thay đổi yêu cầu các quy trình linh hoạt từ khách hàng
++ Thường xuyên chuyển giao phần mềm hoạt động tốt cho khách hàng từ hàng tuần đến hàng tháng
++ Nhà kinh doanh và nhà phát triển phải làm việc cùng nhau hàng ngày
++ xây dựng các dự án xung quanh cá nhân có động lực cung cấp cho họ môi trường hỗ trợ cần thiết tin tưởng họ
++ Cách Hiệu quả nhất để truyền tải thông tin đến nhóm phát triển đó chính là trò chuyện trực tiếp
++ Phần mềm hoạt động tốt là thước đo tiến độ
++ Liên tục quan tâm đến các kỹ thuật, thiết kế tốt để gia tăng tính linh hoạt
++ Các quy trình linh hoạt thúc đẩy phát triển bền vững
++ Sự đơn giản nghệ thuật tối đa hóa hoạt động kinh doanh chưa hoàn thành là điều cơ bản nhất
++ Các kiến trúc tốt yêu cầu tốt nhất thiết kế tốt nhất được ra bởi các nhóm tự tổ chức,
++ Nhóm phát triển tại sao để trở nên hiệu quả hơn điều chỉnh và thay đổi hành vi của mình cho phù hợp (retro)
+Chiếc ô Agile
+- Scrum: vd sportify, LCD,...
+4 cuộc họp: Planning, daily, review, retrospective thông qua các tools: jara, excel, github...
+
+
+
+
